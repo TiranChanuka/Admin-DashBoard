@@ -1,14 +1,20 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Dashboard from "./screens/dashboard/dashboard";
+import { Expenses } from "./screens/expenses/expenses";
+import Layout from "./screens/Layout/layout";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline text-blue-500">
-        Hello world!
-      </h1>
-      <h1 className="text-3xl font-bold underline text-blue-500">admin</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="expenses" element={<Expenses />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
