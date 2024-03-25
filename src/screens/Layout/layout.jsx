@@ -1,17 +1,17 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import { SideBar } from '../global/sidebar';
+import Sidebar from '../global/sideBarNew';
 
 const Layout = () => {
   return (
-      <div className='flex flex-row bg-black h-screen w-screen overflow-hidden'>
-          <SideBar/>
-          <div className='p-4'>
-              <div>{<Outlet/>}</div>
-          </div>
-          
-          
-      </div>
+      <div className="bg-black h-screen w-screen overflow-hidden flex flex-row">
+			<Sidebar />
+			<div className="flex flex-col flex-1">
+				<div className="flex-1 p-4 min-h-0 overflow-auto">
+					<Outlet />
+				</div>
+			</div>
+		</div>
       
   )
 }
