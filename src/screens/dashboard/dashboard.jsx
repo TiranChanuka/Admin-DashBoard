@@ -1,13 +1,12 @@
 const Dashboard = () => {
     return (
-        <div className="p-10 bg-slate-400 ">
-            <container>
-                <div>
-                <div className=" text-white">Dashboards</div>
+        <div className=" bg-slate-400 rounded-3xl">
+            <div className="grid grid-cols-12 gap-4">
+                <div className="md:col-span-8 text-white">Dashboards</div>
+                <div className="md:col-span-4 bg-red-300 text-white">Dashboards</div>
             </div>
-            </container>
         </div>
-        
+
     );
 }
 export default Dashboard;
