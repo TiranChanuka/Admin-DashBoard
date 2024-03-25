@@ -2,6 +2,6 @@ import React from 'react'
 
 export const Expenses = () => {
   return (
-    <div>expenses</div>
+    <div className='text-white'>expenses</div>
   )
 }
