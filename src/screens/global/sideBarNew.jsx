@@ -8,7 +8,7 @@ const linkClass =
 
 export default function Sidebar() {
     return (
-        <div className="bg-neutral-900 w-100 p-14 flex flex-col">
+        <div className=" w-100 p-14 flex flex-col">
             <div className="flex items-center gap-2 px-1 py-3">
                 <img
                     alt="profile-user"
@@ -17,6 +17,7 @@ export default function Sidebar() {
                     src="./Assets/profile.png"
                     className={`cursor-pointer duration-500 rounded-md`}
                 />
+                <div className="text-white  bg-iconRed font-poppins rounded-full p-2 text-13px absolute top-11 left-32">4</div>
             </div>
             <div className="text-white">
                 <div className="text-30px font-semibold">Samantha</div>
