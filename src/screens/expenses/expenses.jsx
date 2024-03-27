@@ -6,6 +6,8 @@ import { MdDirectionsBusFilled } from "react-icons/md";
 import { MdHome } from "react-icons/md";
 import { IoMdPlayCircle } from "react-icons/io";
 import { GiRiceCooker } from "react-icons/gi";
+import { FiPlusCircle } from "react-icons/fi";
+import { ProgressBar } from '../../components/progressBar';
 
 export const Expenses = () => {
   return (
@@ -16,10 +18,17 @@ export const Expenses = () => {
             <div className='text text-40px font-semibold'>Expenses</div>
             <div className='text-16px'>01 - 25 March, 2020</div>
           </div>
-          <div >Images</div>
+          {/* three images and plus button */}
+          <div className='flex justify-end'>
+            <img src="./Assets/girl.png" alt="girl1" className=' rounded-full object-cover w-[32px] h-[32px]' />
+            <img src="./Assets/boy.png" alt="boy" className=' rounded-full object-cover w-[32px] h-[32px]' />
+            <img src="./Assets/girl2.png" alt="girl2" className=' rounded-full object-cover w-[32px] h-[32px]' />
+            <div className=' text-32px ms-3 text-[#D2DCE8]'><FiPlusCircle /></div>
+          </div>
+          {/* three images and plus button */}
           <div className='col-span-3'>
             <div className='text-40px font-semibold'>
-              <div>
+              <div className=' '>
                 <TransactionChart />
               </div>
             </div>
@@ -103,8 +112,42 @@ export const Expenses = () => {
           </div>
 
         </div>
-        <div className="md:col-span-4 bg-red-300 text-white p-14">
-          <div>SideChart</div>
+        <div className="md:col-span-4 bg-sidebarColor text-black p-14 rounded-r-3xl font-poppins">
+          <div className='text-20px font-medium'>Where your money go?</div>
+          {/* Progress Bars */}
+          <div>
+            <ProgressBar />
+          </div>
+          {/* Progress Bars */}
+          <div className=' bg-sideBox w-100% h-[258px] mt-24 ps-6 pe-6 rounded-xl'>
+            <div className=' flex justify-between '>
+              <div className=' transform -translate-y-1/4'>
+                <img
+                  alt="box"
+                  width="85px"
+                  height="73px"
+                  src="./Assets/box.png"
+                />
+              </div>
+              <div className='transform -translate-y-1/2 items-end'>
+                <img
+                  alt="box"
+                  width="53px"
+                  height="91px"
+                  src="./Assets/plant.png"
+                />
+              </div>
+
+            </div>
+            <div className='font-poppins'>
+              <div className='  font-semibold text-16px'>Save more money</div>
+              <div className=' text-12px font-regular mt-1'> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+            </div>
+            <div className=' items-center'>
+              <button className='bg-black p-2.5 text-white text-13px w-[230px] rounded-lg mt-6'>VIEW TIPS</button>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
