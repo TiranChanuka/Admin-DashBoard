@@ -8,8 +8,8 @@ export const SideBarLinks = [
 
 	},
 	{
-		key: 'expanses',
-		label: 'Expanses',
+		key: 'expenses',
+		label: 'Expenses',
 		path: '/expenses',
 
 	},
