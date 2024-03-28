@@ -18,6 +18,7 @@ module.exports = {
         "14px": "14px",
         "13px": "13px",
         "12px": "12px",
+        "10px": "10px",
       },
       fontWeight: {
         thin: "100",
