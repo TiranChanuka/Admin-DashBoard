@@ -34,6 +34,7 @@ export const Expenses = () => {
               </div>
             </div>
           </div>
+          {/* Today Section */}
           <div className='col-span-3'>
             <div className='mt-4 flex justify-between'>
               <div className='text-16px sm:text-18px font-semibold'>Today</div>
