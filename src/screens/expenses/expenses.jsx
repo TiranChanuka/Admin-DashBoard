@@ -14,19 +14,21 @@ export const Expenses = () => {
     <div className="bg-white rounded-3xl font-poppins w-auto">
       <div className="lg:grid grid-cols-12 gap-4">
         {/* Left section star */}
-        <div className="col-span-8 text-black grid grid-cols-3 p-14">
+        <div className="col-span-8 text-black  grid grid-cols-3 p-14">
           <div className=' col-span-2'>
             <div className=' text-30px sm:text-40px font-semibold'>Expenses</div>
-            <div className=' text-14px sm:text-16px'>01 - 25 March, 2020</div>
+            <div className=' text-14px sm:text-16px text-gray-400'>01 - 25 March, 2020</div>
           </div>
           {/* three images and plus button */}
-          <div className='col-span-1 flex justify-end flex-wrap'>
-            <img src="./Assets/girl.png" alt="girl1" className=' rounded-full object-cover w-[25px] h-[25px] sm:w-[32px] sm:h-[32px]' />
-            <img src="./Assets/boy.png" alt="boy" className=' rounded-full object-cover w-[25px] h-[25px] sm:w-[32px] sm:h-[32px]' />
-            <img src="./Assets/girl2.png" alt="girl2" className=' rounded-full object-cover w-[25px] h-[25px] sm:w-[32px] sm:h-[32px]' />
+          <div className='col-span-1 flex justify-end flex-wrap pt-4'>
+            <img src="./Assets/girl.png" alt="girl1" className=' rounded-full object-cover w-[25px] h-[25px] sm:w-[32px] sm:h-[32px] hidden sm:block' />
+            <img src="./Assets/boy.png" alt="boy" className=' rounded-full object-cover w-[25px] h-[25px] sm:w-[32px] sm:h-[32px] hidden sm:block' />
+            <img src="./Assets/girl2.png" alt="girl2" className=' rounded-full object-cover w-[25px] h-[25px] sm:w-[32px] sm:h-[32px] hidden sm:block' />
             <div className='text-25px sm:text-32px ms-3 text-[#D2DCE8]'><FiPlusCircle /></div>
           </div>
-          {/* three images and plus button */}
+          {/*end three images and plus button */}
+
+          {/* Bar chart */}
           <div className='col-span-3'>
             <div className='text-40px font-semibold'>
               <div className=' '>
@@ -34,6 +36,7 @@ export const Expenses = () => {
               </div>
             </div>
           </div>
+
           {/* Today Section */}
           <div className='col-span-3'>
             <div className='mt-4 flex justify-between'>
@@ -79,6 +82,7 @@ export const Expenses = () => {
               </div>
             </div>
           </div>
+
           {/* Monday, 23 March 2020 Section */}
           <div className='col-span-3 mt-10'>
             <div className='mt-4 flex justify-between'>
@@ -113,14 +117,17 @@ export const Expenses = () => {
             </div>
           </div>
         </div>
+
         {/* Right section start */}
         <div className="lg:col-span-4 bg-sidebarColor text-black p-14 rounded-r-3xl rounded-l-3xl font-poppins">
           <div className=' text-18px md:text-20px font-medium'>Where your money go?</div>
           {/* Progress Bars */}
+
           <div>
             <ProgressBar />
           </div>
           {/* end Progress Bars */}
+          {/* Side Box */}
           <div class="bg-sideBox w-100% h-[258px] mt-24 ps-6 pe-6 rounded-xl">
             <div class="flex justify-between">
               <div class="transform -translate-y-1/4">
