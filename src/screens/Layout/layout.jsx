@@ -3,19 +3,11 @@ import { Outlet } from 'react-router-dom'
 import Sidebar from '../global/sideBarNew';
 import FabButton from '../../components/floatingButton';
 import { CgMenuGridO } from "react-icons/cg";
-import Popup from 'reactjs-popup';
 // import { SideBar } from '../global/sidebar';
 
 const Layout = () => {
 	const handleClick = () => {
-		// Handle button click actions here
-		<Popup trigger={<button> Trigger</button>}>
-			<div>
-				<ul>
-					<li>hello</li>
-				</ul>
-			</div>
-		</Popup>
+		console.log('clicked');
 
 	}
 	return (
@@ -28,11 +20,6 @@ const Layout = () => {
 					<CgMenuGridO />
 				</FabButton>
 			</div>
-			{/* <div className=' block lg:hidden'>
-				<Sidebar />
-			</div> */}
-
-			{/* <SideBar /> */}
 			<div className="flex flex-col flex-1">
 				<div className="flex-1 p-4 min-h-0 overflow-auto">
 					<Outlet />
