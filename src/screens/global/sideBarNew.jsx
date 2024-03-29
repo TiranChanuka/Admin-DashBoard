@@ -6,7 +6,7 @@ import { SideBarLinks } from "../../components/SideLinks";
 const linkClass =
     "flex items-start font-semibold hover:text-white text-gray-400 hover:no-underline rounded-sm text-25px ";
 
-export default function Sidebar() {
+const Sidebar = () => {
     return (
         <div className=" w-100 p-14 flex flex-col">
             <div className="transform -translate-y-1/4 absolute left-28">
@@ -32,7 +32,7 @@ export default function Sidebar() {
             </div>
         </div>
     );
-}
+};
 
 function SidebarLink({ link }) {
     const { pathname } = useLocation();
@@ -42,7 +42,7 @@ function SidebarLink({ link }) {
             to={link.path}
             className={classNames(
                 pathname === link.path
-                    ? "bg text-white"
+                    ? "text-white"
                     : "text-neutral-400",
                 linkClass
             )}
@@ -52,3 +52,4 @@ function SidebarLink({ link }) {
         </Link>
     );
 };
+export default Sidebar;
