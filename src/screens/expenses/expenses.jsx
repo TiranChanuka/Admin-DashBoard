@@ -14,7 +14,7 @@ export const Expenses = () => {
     <div className="bg-white rounded-3xl font-poppins w-auto">
       <div className="lg:grid grid-cols-12 gap-4">
         {/* Left section star */}
-        <div className="col-span-8 text-black  grid grid-cols-3 p-14">
+        <div className="col-span-8 text-black  grid grid-cols-3 p-5 sm:p-14">
           <div className=' col-span-2'>
             <div className=' text-30px sm:text-40px font-semibold'>Expenses</div>
             <div className=' text-14px sm:text-16px text-gray-400'>01 - 25 March, 2020</div>
@@ -119,7 +119,7 @@ export const Expenses = () => {
         </div>
 
         {/* Right section start */}
-        <div className="lg:col-span-4 bg-sidebarColor text-black p-14 rounded-r-3xl rounded-l-3xl font-poppins">
+        <div className="lg:col-span-4 bg-sidebarColor text-black p-5 sm:p-14 rounded-r-3xl rounded-l-3xl font-poppins">
           <div className=' text-18px md:text-20px font-medium'>Where your money go?</div>
           {/* Progress Bars */}
 
